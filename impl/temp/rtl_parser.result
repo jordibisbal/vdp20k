@@ -1,0 +1,64 @@
+[
+ {
+  "InstFile" : "C:/Users/jordi/OneDrive/Documents/Projects/FPGA/vdp20k/src/top.v",
+  "InstLine" : 24,
+  "InstName" : "top",
+  "ModuleFile" : "C:/Users/jordi/OneDrive/Documents/Projects/FPGA/vdp20k/src/top.v",
+  "ModuleLine" : 24,
+  "ModuleName" : "top",
+  "SubInsts" : [
+   {
+    "InstFile" : "C:/Users/jordi/OneDrive/Documents/Projects/FPGA/vdp20k/src/top.v",
+    "InstLine" : 83,
+    "InstName" : "foregroundPlane_inst",
+    "ModuleFile" : "C:/Users/jordi/OneDrive/Documents/Projects/FPGA/vdp20k/src/planes/foreground/foregroundPlane.v",
+    "ModuleLine" : 2,
+    "ModuleName" : "foregroundPlane",
+    "SubInsts" : [
+     {
+      "InstFile" : "C:/Users/jordi/OneDrive/Documents/Projects/FPGA/vdp20k/src/planes/foreground/foregroundPlane.v",
+      "InstLine" : 10,
+      "InstName" : "foregroundVRam_00_inst",
+      "ModuleFile" : "C:/Users/jordi/OneDrive/Documents/Projects/FPGA/vdp20k/src/planes/foreground/foregroundVRam_00.v",
+      "ModuleLine" : 10,
+      "ModuleName" : "foregroundVRam_00"
+     }
+    ]
+   },
+   {
+    "InstFile" : "C:/Users/jordi/OneDrive/Documents/Projects/FPGA/vdp20k/src/top.v",
+    "InstLine" : 93,
+    "InstName" : "videoPlanes_inst",
+    "ModuleFile" : "C:/Users/jordi/OneDrive/Documents/Projects/FPGA/vdp20k/src/videoPlanes.v",
+    "ModuleLine" : 17,
+    "ModuleName" : "videoPlanes"
+   },
+   {
+    "InstFile" : "C:/Users/jordi/OneDrive/Documents/Projects/FPGA/vdp20k/src/top.v",
+    "InstLine" : 138,
+    "InstName" : "u_tmds_rpll",
+    "ModuleFile" : "C:/Users/jordi/OneDrive/Documents/Projects/FPGA/vdp20k/src/gowin_rpll/TMDS_rPLL.v",
+    "ModuleLine" : 9,
+    "ModuleName" : "TMDS_rPLL"
+   },
+   {
+    "InstFile" : "C:/Users/jordi/OneDrive/Documents/Projects/FPGA/vdp20k/src/top.v",
+    "InstLine" : 159,
+    "InstName" : "DVI_TX_Top_inst",
+    "ModuleFile" : "C:/Users/jordi/OneDrive/Documents/Projects/FPGA/vdp20k/src/dvi_tx/dvi_tx.v",
+    "ModuleLine" : 1035,
+    "ModuleName" : "DVI_TX_Top",
+    "SubInsts" : [
+     {
+      "InstFile" : "C:/Users/jordi/OneDrive/Documents/Projects/FPGA/vdp20k/src/dvi_tx/dvi_tx.v",
+      "InstLine" : 1066,
+      "InstName" : "rgb2dvi_inst",
+      "ModuleFile" : "C:/Users/jordi/OneDrive/Documents/Projects/FPGA/vdp20k/src/dvi_tx/dvi_tx.v",
+      "ModuleLine" : 1,
+      "ModuleName" : "~rgb2dvi.DVI_TX_Top"
+     }
+    ]
+   }
+  ]
+ }
+]

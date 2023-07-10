@@ -1,0 +1,36 @@
+{
+ "Files" : [
+  {
+   "Path" : "C:/Users/jordi/OneDrive/Documents/Projects/FPGA/vdp20k/src/dvi_tx/dvi_tx.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Users/jordi/OneDrive/Documents/Projects/FPGA/vdp20k/src/gowin_rpll/TMDS_rPLL.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Users/jordi/OneDrive/Documents/Projects/FPGA/vdp20k/src/planes/foreground/foregroundPlane.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Users/jordi/OneDrive/Documents/Projects/FPGA/vdp20k/src/planes/foreground/foregroundVRam_00.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Users/jordi/OneDrive/Documents/Projects/FPGA/vdp20k/src/top.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Users/jordi/OneDrive/Documents/Projects/FPGA/vdp20k/src/videoPlanes.v",
+   "Type" : "verilog"
+  }
+ ],
+ "IncludePath" : [
+
+ ],
+ "LoopLimit" : 2000,
+ "ResultFile" : "C:/Users/jordi/OneDrive/Documents/Projects/FPGA/vdp20k/impl/temp/rtl_parser.result",
+ "Top" : "",
+ "VerilogStd" : "sysv",
+ "VhdlStd" : "vhdl_2008"
+}

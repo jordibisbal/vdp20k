@@ -1,0 +1,34 @@
+Reading netlist file: "C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\impl\gwsynthesis\hdmi.vg"
+Parsing netlist file "C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\impl\gwsynthesis\hdmi.vg" completed
+Processing netlist completed
+Reading constraint file: "C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\src\hdmi.cst"
+Physical Constraint parsed completed
+Running placement......
+[10%] Placement Phase 0 completed
+[20%] Placement Phase 1 completed
+[30%] Placement Phase 2 completed
+WARN  (TA1121) : rpll_inst's "CLKIN" pin has more than one clock on it,use clock "I_clk" as master clock of "u_tmds_rpll/rpll_inst/CLKOUT" pin
+WARN  (TA1121) : rpll_inst's "CLKIN" pin has more than one clock on it,use clock "I_clk" as master clock of "u_tmds_rpll/rpll_inst/CLKOUTP" pin
+WARN  (TA1121) : rpll_inst's "CLKIN" pin has more than one clock on it,use clock "I_clk" as master clock of "u_tmds_rpll/rpll_inst/CLKOUTD" pin
+WARN  (TA1121) : rpll_inst's "CLKIN" pin has more than one clock on it,use clock "I_clk" as master clock of "u_tmds_rpll/rpll_inst/CLKOUTD3" pin
+[50%] Placement Phase 3 completed
+Running routing......
+[60%] Routing Phase 0 completed
+[70%] Routing Phase 1 completed
+[80%] Routing Phase 2 completed
+WARN  (PR1014) : Generic routing resource will be used to clock signal 'I_clk_d' by the specified constraint. And then it may lead to the excessive delay or skew
+[90%] Routing Phase 3 completed
+Running timing analysis......
+[95%] Timing analysis completed
+Placement and routing completed
+Bitstream generation in progress......
+Bitstream generation completed
+Running power analysis......
+[100%] Power analysis completed
+Generate file "C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\impl\pnr\hdmi.power.html" completed
+Generate file "C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\impl\pnr\hdmi.pin.html" completed
+Generate file "C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\impl\pnr\hdmi.rpt.html" completed
+Generate file "C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\impl\pnr\hdmi.rpt.txt" completed
+Generate file "C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\impl\pnr\hdmi.tr.html" completed
+Mon Jul 10 18:52:21 2023
+

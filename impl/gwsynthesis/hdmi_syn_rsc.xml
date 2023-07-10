@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module name="top" Register="10" Alu="8" Lut="3">
+    <SubModule name="foregroundPlane_inst" Register="1"/>
+    <SubModule name="videoPlanes_inst" Register="89" Lut="154"/>
+    <SubModule name="u_tmds_rpll"/>
+    <SubModule name="DVI_TX_Top_inst" Register="73" Alu="68" Lut="217"/>
+</Module>
