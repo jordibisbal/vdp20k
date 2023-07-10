@@ -5,7 +5,11 @@ module clockGenerator
     output O_serial_clk,
     output O_pixel_clk,    
     output O_N_reset,
-    output O_phase_0
+    output reg O_phase_0,
+    output reg O_phase_1,
+    output reg O_phase_2,
+    output reg O_phase_3,
+    output reg O_phase_4
 );
 
 assign O_N_reset = I_N_rst & O_pll_lock;
@@ -34,16 +38,19 @@ defparam u_clkdiv.GSREN="false";
 
 // Phase generator
 
-reg [5:0] O_phase;
-
-assign O_phase_0 = O_phase[0];
-
 always @ ( posedge O_serial_clk or negedge O_N_reset ) begin
-    if ( O_N_reset ) begin
-        O_phase <= O_phase << 1;
-        O_phase[0] <= O_phase[4];          
+    if ( O_N_reset ) begin        
+        O_phase_1 <= O_phase_0;
+        O_phase_2 <= O_phase_1;
+        O_phase_3 <= O_phase_2;
+        O_phase_4 <= O_phase_3;
+        O_phase_0 <= O_phase_4;
     end else begin
-        O_phase <= 5'b00001;             
+        O_phase_0 <= 1;       
+        O_phase_1 <= 0;       
+        O_phase_2 <= 0;       
+        O_phase_3 <= 0;       
+        O_phase_4 <= 0;       
     end
 end
 

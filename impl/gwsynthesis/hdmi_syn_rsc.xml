@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Module name="top" Register="10" Alu="8" Lut="2">
-    <SubModule name="clockGenerator_inst" Lut="1">
+    <SubModule name="clockGenerator_inst" Register="5" Lut="1">
         <SubModule name="u_tmds_rpll"/>
     </SubModule>
     <SubModule name="foregroundPlane_inst" Register="1"/>

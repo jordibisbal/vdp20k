@@ -49,13 +49,19 @@ reg  [9:0]  cnt_vs;
 //===========================================================================
 // clock generation
 
+wire pix_latch;
+
 clockGenerator clockGenerator_inst (
     .I_clock(I_clk),
     .I_N_rst(I_rst_n),
     .O_serial_clk(serial_clk),    
     .O_pixel_clk(pix_clk),
     .O_N_reset(reset_n),
-    .O_phase_0()
+    .O_phase_0(),
+    .O_phase_1(),
+    .O_phase_2(),
+    .O_phase_3(),
+    .O_phase_4(pix_latch)
 );
 
 //===================================================
@@ -81,7 +87,7 @@ assign  running = (run_cnt < 32'd14_000_000) ? 1'b1 : 1'b0;
 wire [23:0] W_foregroundPixel;
 
 foregroundPlane foregroundPlane_inst(
-    .I_pxl_clk   (pix_clk            ),//pixel clock
+    .I_pxl_clk   (pix_latch      ),//pixel clock
     .I_rst_n     (reset_n        ),//low active
     .O_pixel     (W_foregroundPixel)
 );
@@ -92,8 +98,8 @@ foregroundPlane foregroundPlane_inst(
 
 videoPlanes videoPlanes_inst
 (
-    .I_pxl_clk   (pix_clk            ),//pixel clock
-    .I_rst_n     (reset_n        ),//low active 
+    .I_pxl_clk   (pix_latch          ),//pixel clock
+    .I_rst_n     (reset_n            ),//low active 
     .I_mode      ({1'b0,cnt_vs[9:8]} ),//data select
     .I_single_r  (8'h07F             ),
     .I_single_g  (8'h0FF             ),
