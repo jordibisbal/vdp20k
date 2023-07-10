@@ -23,8 +23,7 @@
 
 module top
 (
-    input             I_clk           , // 27Mhz
-    input             I_clk0          , // 54MHz
+    input             I_clk           , // 27Mhz 
     input             I_rst_n         ,
     output            O_tmds_clk_p    ,
     output            O_tmds_clk_n    ,
@@ -53,7 +52,7 @@ reg  [9:0]  cnt_vs;
 wire serial_clk;
 wire pll_lock;
 
-wire hdmi4_rst_n;
+wire reset_n;
 
 wire pix_clk;
 
@@ -73,7 +72,17 @@ end
 
 assign  running = (run_cnt < 32'd14_000_000) ? 1'b1 : 1'b0;
 
+// Phases
 
+clockGenerator clockGenerator_inst (
+    .I_clock(I_clk),
+    .I_N_rst(I_rst_n),
+    .I_pll_lock(pll_lock),
+    .I_serial_clk(serial_clk),    
+    .O_pixel_clk(pix_clk),
+    .O_N_reset(reset_n)
+
+);
 
 //===========================================================================
 // foregroundPlane
@@ -82,7 +91,7 @@ wire [23:0] W_foregroundPixel;
 
 foregroundPlane foregroundPlane_inst(
     .I_pxl_clk   (pix_clk            ),//pixel clock
-    .I_rst_n     (hdmi4_rst_n        ),//low active
+    .I_rst_n     (reset_n        ),//low active
     .O_pixel     (W_foregroundPixel)
 );
 
@@ -93,7 +102,7 @@ foregroundPlane foregroundPlane_inst(
 videoPlanes videoPlanes_inst
 (
     .I_pxl_clk   (pix_clk            ),//pixel clock
-    .I_rst_n     (hdmi4_rst_n        ),//low active 
+    .I_rst_n     (reset_n        ),//low active 
     .I_mode      ({1'b0,cnt_vs[9:8]} ),//data select
     .I_single_r  (8'h07F             ),
     .I_single_g  (8'h0FF             ),
@@ -124,9 +133,9 @@ begin
     vs_r <= tp0_vs_in;
 end
 
-always@(posedge pix_clk or negedge hdmi4_rst_n)
+always@(posedge pix_clk or negedge reset_n)
 begin
-    if(!hdmi4_rst_n)
+    if(!reset_n)
         cnt_vs <= 0;
     else if(vs_r && !tp0_vs_in) //vs24 falling edge
         cnt_vs <= cnt_vs + 1'b1;
@@ -142,23 +151,9 @@ TMDS_rPLL u_tmds_rpll
     .lock      (pll_lock  )      //output lock
 );
 
-assign hdmi4_rst_n = I_rst_n & pll_lock;
-
-CLKDIV u_clkdiv
-(
-    .RESETN(hdmi4_rst_n),
-    .HCLKIN(serial_clk),   //clk  x5
-    .CLKOUT(pix_clk),      //clk  x1
-    .CALIB (1'b1)
-);
-
-defparam u_clkdiv.DIV_MODE="5";
-defparam u_clkdiv.GSREN="false";
-
-
 DVI_TX_Top DVI_TX_Top_inst
 (
-    .I_rst_n       (hdmi4_rst_n   ),  //asynchronous reset, low active
+    .I_rst_n       (reset_n   ),  //asynchronous reset, low active
     .I_serial_clk  (serial_clk    ),
     .I_rgb_clk     (pix_clk       ),  //pixel clock
     .I_rgb_vs      (tp0_vs_in     ), 
@@ -172,7 +167,5 @@ DVI_TX_Top DVI_TX_Top_inst
     .O_tmds_data_p (O_tmds_data_p ),  //{r,g,b}
     .O_tmds_data_n (O_tmds_data_n )
 );
-
-
 
 endmodule

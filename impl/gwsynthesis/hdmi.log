@@ -7,7 +7,10 @@ Undeclared symbol 'foregroundVRam_dout_0', assumed default net type 'wire'("C:\U
 Analyzing Verilog file 'C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\src\planes\foreground\foregroundVRam_00.v'
 Analyzing Verilog file 'C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\src\top.v'
 Analyzing Verilog file 'C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\src\videoPlanes.v'
+Analyzing Verilog file 'C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\src\clockGenerator.v'
 Compiling module 'top'("C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\src\top.v":24)
+Compiling module 'clockGenerator'("C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\src\clockGenerator.v":1)
+WARN  (EX2452) : Invert of if-condition matches sensitivity list edge, this is unconventional("C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\src\clockGenerator.v":40)
 Compiling module 'foregroundPlane'("C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\src\planes\foreground\foregroundPlane.v":2)
 Compiling module 'foregroundVRam_00'("C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\src\planes\foreground\foregroundVRam_00.v":10)
 WARN  (EX3670) : Actual bit length 1 differs from formal bit length 4 for port 'dout'("C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\src\planes\foreground\foregroundPlane.v":11)
@@ -68,7 +71,6 @@ Compiling module '**'("C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\sr
 Compiling module '**'("C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\src\dvi_tx\dvi_tx.v":0)
 NOTE  (EX0101) : Current top module is "top"
 [5%] Running netlist conversion ...
-WARN  (CV0016) : Input I_clk0 is unused("C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\src\top.v":27)
 Running device independent optimization ...
 [10%] Optimizing Phase 0 completed
 [15%] Optimizing Phase 1 completed

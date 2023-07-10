@@ -23,6 +23,10 @@
   {
    "Path" : "C:/Users/jordi/OneDrive/Documents/Projects/FPGA/vdp20k/src/videoPlanes.v",
    "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Users/jordi/OneDrive/Documents/Projects/FPGA/vdp20k/src/clockGenerator.v",
+   "Type" : "verilog"
   }
  ],
  "IncludePath" : [

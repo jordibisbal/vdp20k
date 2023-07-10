@@ -7,10 +7,6 @@ Running placement......
 [10%] Placement Phase 0 completed
 [20%] Placement Phase 1 completed
 [30%] Placement Phase 2 completed
-WARN  (TA1121) : rpll_inst's "CLKIN" pin has more than one clock on it,use clock "I_clk" as master clock of "u_tmds_rpll/rpll_inst/CLKOUT" pin
-WARN  (TA1121) : rpll_inst's "CLKIN" pin has more than one clock on it,use clock "I_clk" as master clock of "u_tmds_rpll/rpll_inst/CLKOUTP" pin
-WARN  (TA1121) : rpll_inst's "CLKIN" pin has more than one clock on it,use clock "I_clk" as master clock of "u_tmds_rpll/rpll_inst/CLKOUTD" pin
-WARN  (TA1121) : rpll_inst's "CLKIN" pin has more than one clock on it,use clock "I_clk" as master clock of "u_tmds_rpll/rpll_inst/CLKOUTD3" pin
 [50%] Placement Phase 3 completed
 Running routing......
 [60%] Routing Phase 0 completed
@@ -30,5 +26,5 @@ Generate file "C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\impl\pnr\h
 Generate file "C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\impl\pnr\hdmi.rpt.html" completed
 Generate file "C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\impl\pnr\hdmi.rpt.txt" completed
 Generate file "C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\impl\pnr\hdmi.tr.html" completed
-Mon Jul 10 18:52:21 2023
+Mon Jul 10 21:05:38 2023
 
