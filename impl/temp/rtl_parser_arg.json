@@ -13,10 +13,6 @@
    "Type" : "verilog"
   },
   {
-   "Path" : "C:/Users/jordi/OneDrive/Documents/Projects/FPGA/vdp20k/src/planes/foreground/foregroundVRam_00.v",
-   "Type" : "verilog"
-  },
-  {
    "Path" : "C:/Users/jordi/OneDrive/Documents/Projects/FPGA/vdp20k/src/top.v",
    "Type" : "verilog"
   },

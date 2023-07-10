@@ -7,9 +7,9 @@ module foregroundPlane(
 
     // VRAM
 
-    foregroundVRam_00 foregroundVRam_00_inst (
-        .dout(foregroundVRam_dout_0)     
-    );
+//    foregroundVRam_00 foregroundVRam_00_inst (
+//        .dout(foregroundVRam_dout_0)     
+//    );
 
     // Logic
 

@@ -46,16 +46,17 @@ wire [ 7:0] tp0_data_b /*synthesis syn_keep=1*/;
 reg         vs_r;
 reg  [9:0]  cnt_vs;
 
-//------------------------------------
-//HDMI4 TX
+//===========================================================================
+// clock generation
 
-wire serial_clk;
-wire pll_lock;
-
-wire reset_n;
-
-wire pix_clk;
-
+clockGenerator clockGenerator_inst (
+    .I_clock(I_clk),
+    .I_N_rst(I_rst_n),
+    .O_serial_clk(serial_clk),    
+    .O_pixel_clk(pix_clk),
+    .O_N_reset(reset_n),
+    .O_phase_0()
+);
 
 //===================================================
 //LED test
@@ -72,17 +73,7 @@ end
 
 assign  running = (run_cnt < 32'd14_000_000) ? 1'b1 : 1'b0;
 
-// Phases
 
-clockGenerator clockGenerator_inst (
-    .I_clock(I_clk),
-    .I_N_rst(I_rst_n),
-    .I_pll_lock(pll_lock),
-    .I_serial_clk(serial_clk),    
-    .O_pixel_clk(pix_clk),
-    .O_N_reset(reset_n)
-
-);
 
 //===========================================================================
 // foregroundPlane
@@ -144,12 +135,9 @@ end
 //==============================================================================
 //TMDS TX(HDMI4)
 
-TMDS_rPLL u_tmds_rpll
-(
-    .clkin     (I_clk     ),     //input clk 
-    .clkout    (serial_clk),     //output clk 
-    .lock      (pll_lock  )      //output lock
-);
+
+
+
 
 DVI_TX_Top DVI_TX_Top_inst
 (

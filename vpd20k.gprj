@@ -9,7 +9,7 @@
         <File path="src/dvi_tx/dvi_tx.v" type="file.verilog" enable="1"/>
         <File path="src/gowin_rpll/TMDS_rPLL.v" type="file.verilog" enable="1"/>
         <File path="src/planes/foreground/foregroundPlane.v" type="file.verilog" enable="1"/>
-        <File path="src/planes/foreground/foregroundVRam_00.v" type="file.verilog" enable="1"/>
+        <File path="src/planes/foreground/foregroundVRam_00.v" type="file.verilog" enable="0"/>
         <File path="src/planes/foreground/foregroundVRam_01.v" type="file.verilog" enable="0"/>
         <File path="src/top.v" type="file.verilog" enable="1"/>
         <File path="src/videoPlanes.v" type="file.verilog" enable="1"/>

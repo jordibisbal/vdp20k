@@ -7,7 +7,6 @@
         <File path="C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\src\dvi_tx\dvi_tx.v" type="verilog"/>
         <File path="C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\src\gowin_rpll\TMDS_rPLL.v" type="verilog"/>
         <File path="C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\src\planes\foreground\foregroundPlane.v" type="verilog"/>
-        <File path="C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\src\planes\foreground\foregroundVRam_00.v" type="verilog"/>
         <File path="C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\src\top.v" type="verilog"/>
         <File path="C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\src\videoPlanes.v" type="verilog"/>
         <File path="C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\src\clockGenerator.v" type="verilog"/>

@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Module name="top" Register="10" Alu="8" Lut="2">
-    <SubModule name="clockGenerator_inst" Lut="1"/>
+    <SubModule name="clockGenerator_inst" Lut="1">
+        <SubModule name="u_tmds_rpll"/>
+    </SubModule>
     <SubModule name="foregroundPlane_inst" Register="1"/>
     <SubModule name="videoPlanes_inst" Register="89" Lut="154"/>
-    <SubModule name="u_tmds_rpll"/>
     <SubModule name="DVI_TX_Top_inst" Register="73" Alu="68" Lut="217"/>
 </Module>
