@@ -7,9 +7,8 @@ Running placement......
 [10%] Placement Phase 0 completed
 [20%] Placement Phase 1 completed
 [30%] Placement Phase 2 completed
-WARN  (TA1117) : Can't calculate clocks' relationship between: "pix_latch" and "clockGenerator_inst/u_clkdiv/CLKOUT.default_gen_clk"
-WARN  (TA1117) : Can't calculate clocks' relationship between: "pix_latch" and "clockGenerator_inst/u_tmds_rpll/rpll_inst/CLKOUT.default_gen_clk"
-WARN  (TA1117) : Can't calculate clocks' relationship between: "clockGenerator_inst/u_clkdiv/CLKOUT.default_gen_clk" and "pix_latch"
+WARN  (TA1117) : Can't calculate clocks' relationship between: "pixel_latch" and "clockGenerator_inst/u_tmds_rpll/rpll_inst/CLKOUT.default_gen_clk"
+WARN  (TA1117) : Can't calculate clocks' relationship between: "pixel_latch" and "clockGenerator_inst/u_clkdiv/CLKOUT.default_gen_clk"
 [50%] Placement Phase 3 completed
 Running routing......
 [60%] Routing Phase 0 completed
@@ -29,5 +28,5 @@ Generate file "C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\impl\pnr\h
 Generate file "C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\impl\pnr\hdmi.rpt.html" completed
 Generate file "C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\impl\pnr\hdmi.rpt.txt" completed
 Generate file "C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\impl\pnr\hdmi.tr.html" completed
-Mon Jul 10 21:50:10 2023
+Tue Jul 11 07:52:10 2023
 

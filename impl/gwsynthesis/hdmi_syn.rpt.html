@@ -56,11 +56,11 @@ table.detail_table td.label { min-width: 100px; width: 8%;}
 <tr>
 <td class="label">Design File</td>
 <td>C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\src\dvi_tx\dvi_tx.v<br>
-C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\src\gowin_rpll\TMDS_rPLL.v<br>
 C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\src\planes\foreground\foregroundPlane.v<br>
 C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\src\top.v<br>
-C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\src\videoPlanes.v<br>
-C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\src\clockGenerator.v<br>
+C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\src\clock\clockGenerator.v<br>
+C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\src\clock\gowin_rpll\TMDS_rPLL.v<br>
+C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\src\PlaneMixer.v<br>
 </td>
 </tr>
 <tr>
@@ -85,7 +85,7 @@ C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\src\clockGenerator.v<br>
 </tr>
 <tr>
 <td class="label">Created Time</td>
-<td>Mon Jul 10 21:50:07 2023
+<td>Tue Jul 11 07:52:07 2023
 </td>
 </tr>
 <tr>
@@ -101,11 +101,11 @@ C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\src\clockGenerator.v<br>
 </tr>
 <tr>
 <td class="label">Synthesis Process</td>
-<td>Running parser:<br/>&nbsp;&nbsp;&nbsp;&nbsp;CPU time = 0h 0m 0.078s, Elapsed time = 0h 0m 0.138s, Peak memory usage = 400.840MB<br/>Running netlist conversion:<br/>&nbsp;&nbsp;&nbsp;&nbsp;CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0s, Peak memory usage = 0MB<br/>Running device independent optimization:<br/>&nbsp;&nbsp;&nbsp;&nbsp;Optimizing Phase 0: CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0.009s, Peak memory usage = 400.840MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Optimizing Phase 1: CPU time = 0h 0m 0.015s, Elapsed time = 0h 0m 0.007s, Peak memory usage = 400.840MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Optimizing Phase 2: CPU time = 0h 0m 0.015s, Elapsed time = 0h 0m 0.015s, Peak memory usage = 400.840MB<br/>Running inference:<br/>&nbsp;&nbsp;&nbsp;&nbsp;Inferring Phase 0: CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0.004s, Peak memory usage = 400.840MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Inferring Phase 1: CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0.001s, Peak memory usage = 400.840MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Inferring Phase 2: CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0.001s, Peak memory usage = 400.840MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Inferring Phase 3: CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0.001s, Peak memory usage = 400.840MB<br/>Running technical mapping:<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 0: CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0.015s, Peak memory usage = 400.840MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 1: CPU time = 0h 0m 0.015s, Elapsed time = 0h 0m 0.004s, Peak memory usage = 400.840MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 2: CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0.002s, Peak memory usage = 400.840MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 3: CPU time = 0h 0m 0.265s, Elapsed time = 0h 0m 0.376s, Peak memory usage = 400.840MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 4: CPU time = 0h 0m 0.031s, Elapsed time = 0h 0m 0.038s, Peak memory usage = 400.840MB<br/>Generate output files:<br/>&nbsp;&nbsp;&nbsp;&nbsp;CPU time = 0h 0m 0.015s, Elapsed time = 0h 0m 0.017s, Peak memory usage = 400.840MB<br/></td>
+<td>Running parser:<br/>&nbsp;&nbsp;&nbsp;&nbsp;CPU time = 0h 0m 0.125s, Elapsed time = 0h 0m 0.133s, Peak memory usage = 430.473MB<br/>Running netlist conversion:<br/>&nbsp;&nbsp;&nbsp;&nbsp;CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0s, Peak memory usage = 0MB<br/>Running device independent optimization:<br/>&nbsp;&nbsp;&nbsp;&nbsp;Optimizing Phase 0: CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0.007s, Peak memory usage = 430.473MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Optimizing Phase 1: CPU time = 0h 0m 0.015s, Elapsed time = 0h 0m 0.006s, Peak memory usage = 430.473MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Optimizing Phase 2: CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0.012s, Peak memory usage = 430.473MB<br/>Running inference:<br/>&nbsp;&nbsp;&nbsp;&nbsp;Inferring Phase 0: CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0.004s, Peak memory usage = 430.473MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Inferring Phase 1: CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0.001s, Peak memory usage = 430.473MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Inferring Phase 2: CPU time = 0h 0m 0.015s, Elapsed time = 0h 0m 0.001s, Peak memory usage = 430.473MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Inferring Phase 3: CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0.001s, Peak memory usage = 430.473MB<br/>Running technical mapping:<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 0: CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0.011s, Peak memory usage = 430.473MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 1: CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0.003s, Peak memory usage = 430.473MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 2: CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0.002s, Peak memory usage = 430.473MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 3: CPU time = 0h 0m 0.218s, Elapsed time = 0h 0m 0.309s, Peak memory usage = 430.473MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 4: CPU time = 0h 0m 0.015s, Elapsed time = 0h 0m 0.031s, Peak memory usage = 430.473MB<br/>Generate output files:<br/>&nbsp;&nbsp;&nbsp;&nbsp;CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0.016s, Peak memory usage = 430.473MB<br/></td>
 </tr>
 <tr>
 <td class="label">Total Time and Memory Usage</td>
-<td>CPU time = 0h 0m 0.434s, Elapsed time = 0h 0m 0.628s, Peak memory usage = 400.840MB</td>
+<td>CPU time = 0h 0m 0.388s, Elapsed time = 0h 0m 0.537s, Peak memory usage = 430.473MB</td>
 </tr>
 </table>
 <h1><a name="resource">Resource</a></h1>
@@ -133,11 +133,7 @@ C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\src\clockGenerator.v<br>
 </tr>
 <tr>
 <td class="label"><b>Register </b></td>
-<td>178</td>
-</tr>
-<tr>
-<td class="label">&nbsp&nbsp&nbsp&nbspDFF</td>
-<td>1</td>
+<td>192</td>
 </tr>
 <tr>
 <td class="label">&nbsp&nbsp&nbsp&nbspDFFP</td>
@@ -145,43 +141,47 @@ C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\src\clockGenerator.v<br>
 </tr>
 <tr>
 <td class="label">&nbsp&nbsp&nbsp&nbspDFFC</td>
-<td>119</td>
+<td>130</td>
 </tr>
 <tr>
 <td class="label">&nbsp&nbsp&nbsp&nbspDFFCE</td>
-<td>44</td>
+<td>31</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspDFFNC</td>
+<td>17</td>
 </tr>
 <tr>
 <td class="label"><b>LUT </b></td>
-<td>367</td>
+<td>339</td>
 </tr>
 <tr>
 <td class="label">&nbsp&nbsp&nbsp&nbspLUT2</td>
-<td>56</td>
+<td>52</td>
 </tr>
 <tr>
 <td class="label">&nbsp&nbsp&nbsp&nbspLUT3</td>
-<td>88</td>
+<td>69</td>
 </tr>
 <tr>
 <td class="label">&nbsp&nbsp&nbsp&nbspLUT4</td>
-<td>223</td>
+<td>218</td>
 </tr>
 <tr>
 <td class="label"><b>ALU </b></td>
-<td>76</td>
+<td>68</td>
 </tr>
 <tr>
 <td class="label">&nbsp&nbsp&nbsp&nbspALU</td>
-<td>76</td>
+<td>68</td>
 </tr>
 <tr>
 <td class="label"><b>INV </b></td>
-<td>7</td>
+<td>6</td>
 </tr>
 <tr>
 <td class="label">&nbsp&nbsp&nbsp&nbspINV</td>
-<td>7</td>
+<td>6</td>
 </tr>
 <tr>
 <td class="label"><b>IOLOGIC </b></td>
@@ -213,12 +213,12 @@ C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\src\clockGenerator.v<br>
 </tr>
 <tr>
 <td class="label">Logic</td>
-<td>450(374 LUTs, 76 ALUs) / 20736</td>
-<td>3%</td>
+<td>413(345 LUTs, 68 ALUs) / 20736</td>
+<td>2%</td>
 </tr>
 <tr>
 <td class="label">Register</td>
-<td>178 / 15750</td>
+<td>192 / 15750</td>
 <td>2%</td>
 </tr>
 <tr>
@@ -228,7 +228,7 @@ C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\src\clockGenerator.v<br>
 </tr>
 <tr>
 <td class="label">&nbsp&nbsp--Register as FF</td>
-<td>178 / 15750</td>
+<td>192 / 15750</td>
 <td>2%</td>
 </tr>
 <tr>
@@ -263,7 +263,7 @@ C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\src\clockGenerator.v<br>
 <td>I_clk_ibuf/I </td>
 </tr>
 <tr>
-<td>pix_latch</td>
+<td>pixel_latch</td>
 <td>Base</td>
 <td>10.000</td>
 <td>100.0</td>
@@ -341,7 +341,7 @@ C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\src\clockGenerator.v<br>
 </tr>
 <tr>
 <td>1</td>
-<td>pix_latch</td>
+<td>pixel_latch</td>
 <td>100.0(MHz)</td>
 <td>275.2(MHz)</td>
 <td>5</td>
@@ -370,19 +370,19 @@ C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\src\clockGenerator.v<br>
 <table class="summary_table">
 <tr>
 <td class="label">Slack</td>
-<td>-4.616</td>
+<td>-4.690</td>
 </tr>
 <tr>
 <td class="label">Data Arrival Time</td>
-<td>1674.931</td>
+<td>839.988</td>
 </tr>
 <tr>
 <td class="label">Data Required Time</td>
-<td>1670.315</td>
+<td>835.298</td>
 </tr>
 <tr>
 <td class="label">From</td>
-<td>videoPlanes_inst/Data_tmp_21_s1</td>
+<td>planeMixer/Data_tmp_17_s2</td>
 </tr>
 <tr>
 <td class="label">To</td>
@@ -390,11 +390,11 @@ C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\src\clockGenerator.v<br>
 </tr>
 <tr>
 <td class="label">Launch Clk</td>
-<td>pix_latch[R]</td>
+<td>pixel_latch[R]</td>
 </tr>
 <tr>
 <td class="label">Latch Clk</td>
-<td>clockGenerator_inst/u_clkdiv/CLKOUT.default_gen_clk[R]</td>
+<td>clockGenerator_inst/u_clkdiv/CLKOUT.default_gen_clk[F]</td>
 </tr>
 </table>
 <b>Data Arrival Path:</b>
@@ -408,39 +408,39 @@ C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\src\clockGenerator.v<br>
 <th>NODE</th>
 </tr>
 <tr>
-<td>1670.000</td>
+<td>835.000</td>
 <td>0.000</td>
 <td> </td>
 <td> </td>
 <td> </td>
-<td>pix_latch</td>
+<td>pixel_latch</td>
 </tr>
 <tr>
-<td>1670.000</td>
+<td>835.000</td>
 <td>0.000</td>
 <td>tCL</td>
-<td>RR</td>
-<td>91</td>
+<td>FF</td>
+<td>115</td>
 <td>clockGenerator_inst/O_phase_4_s0/Q</td>
 </tr>
 <tr>
-<td>1670.180</td>
-<td>0.180</td>
+<td>835.237</td>
+<td>0.237</td>
 <td>tNET</td>
-<td>RR</td>
+<td>FF</td>
 <td>1</td>
-<td>videoPlanes_inst/Data_tmp_21_s1/CLK</td>
+<td>planeMixer/Data_tmp_17_s2/CLK</td>
 </tr>
 <tr>
-<td>1670.412</td>
+<td>835.469</td>
 <td>0.232</td>
 <td>tC2Q</td>
-<td>RF</td>
-<td>24</td>
-<td>videoPlanes_inst/Data_tmp_21_s1/Q</td>
+<td>FF</td>
+<td>4</td>
+<td>planeMixer/Data_tmp_17_s2/Q</td>
 </tr>
 <tr>
-<td>1670.649</td>
+<td>835.706</td>
 <td>0.237</td>
 <td>tNET</td>
 <td>FF</td>
@@ -448,7 +448,7 @@ C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\src\clockGenerator.v<br>
 <td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/n114_s8/I1</td>
 </tr>
 <tr>
-<td>1671.204</td>
+<td>836.261</td>
 <td>0.555</td>
 <td>tINS</td>
 <td>FF</td>
@@ -456,7 +456,7 @@ C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\src\clockGenerator.v<br>
 <td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/n114_s8/F</td>
 </tr>
 <tr>
-<td>1671.441</td>
+<td>836.498</td>
 <td>0.237</td>
 <td>tNET</td>
 <td>FF</td>
@@ -464,7 +464,7 @@ C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\src\clockGenerator.v<br>
 <td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/n114_s6/I1</td>
 </tr>
 <tr>
-<td>1671.996</td>
+<td>837.053</td>
 <td>0.555</td>
 <td>tINS</td>
 <td>FF</td>
@@ -472,7 +472,7 @@ C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\src\clockGenerator.v<br>
 <td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/n114_s6/F</td>
 </tr>
 <tr>
-<td>1672.233</td>
+<td>837.290</td>
 <td>0.237</td>
 <td>tNET</td>
 <td>FF</td>
@@ -480,7 +480,7 @@ C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\src\clockGenerator.v<br>
 <td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/n114_s5/I2</td>
 </tr>
 <tr>
-<td>1672.686</td>
+<td>837.743</td>
 <td>0.453</td>
 <td>tINS</td>
 <td>FF</td>
@@ -488,7 +488,7 @@ C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\src\clockGenerator.v<br>
 <td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/n114_s5/F</td>
 </tr>
 <tr>
-<td>1672.923</td>
+<td>837.980</td>
 <td>0.237</td>
 <td>tNET</td>
 <td>FF</td>
@@ -496,7 +496,7 @@ C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\src\clockGenerator.v<br>
 <td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/n114_s2/I1</td>
 </tr>
 <tr>
-<td>1673.478</td>
+<td>838.535</td>
 <td>0.555</td>
 <td>tINS</td>
 <td>FF</td>
@@ -504,7 +504,7 @@ C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\src\clockGenerator.v<br>
 <td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/n114_s2/F</td>
 </tr>
 <tr>
-<td>1673.715</td>
+<td>838.772</td>
 <td>0.237</td>
 <td>tNET</td>
 <td>FF</td>
@@ -512,7 +512,7 @@ C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\src\clockGenerator.v<br>
 <td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/n114_s3/I3</td>
 </tr>
 <tr>
-<td>1674.086</td>
+<td>839.143</td>
 <td>0.371</td>
 <td>tINS</td>
 <td>FF</td>
@@ -520,7 +520,7 @@ C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\src\clockGenerator.v<br>
 <td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/n114_s3/F</td>
 </tr>
 <tr>
-<td>1674.323</td>
+<td>839.380</td>
 <td>0.237</td>
 <td>tNET</td>
 <td>FF</td>
@@ -528,7 +528,7 @@ C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\src\clockGenerator.v<br>
 <td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/n114_s0/I3</td>
 </tr>
 <tr>
-<td>1674.694</td>
+<td>839.751</td>
 <td>0.371</td>
 <td>tINS</td>
 <td>FF</td>
@@ -536,7 +536,7 @@ C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\src\clockGenerator.v<br>
 <td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/n114_s0/F</td>
 </tr>
 <tr>
-<td>1674.931</td>
+<td>839.988</td>
 <td>0.237</td>
 <td>tNET</td>
 <td>FF</td>
@@ -555,7 +555,7 @@ C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\src\clockGenerator.v<br>
 <th>NODE</th>
 </tr>
 <tr>
-<td>1670.034</td>
+<td>835.017</td>
 <td>0.000</td>
 <td> </td>
 <td> </td>
@@ -563,15 +563,15 @@ C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\src\clockGenerator.v<br>
 <td>clockGenerator_inst/u_clkdiv/CLKOUT.default_gen_clk</td>
 </tr>
 <tr>
-<td>1670.204</td>
+<td>835.187</td>
 <td>0.170</td>
 <td>tCL</td>
 <td>RR</td>
-<td>87</td>
+<td>77</td>
 <td>clockGenerator_inst/u_clkdiv/CLKOUT</td>
 </tr>
 <tr>
-<td>1670.384</td>
+<td>835.367</td>
 <td>0.180</td>
 <td>tNET</td>
 <td>RR</td>
@@ -579,7 +579,7 @@ C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\src\clockGenerator.v<br>
 <td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/sel_xnor_s0/CLK</td>
 </tr>
 <tr>
-<td>1670.349</td>
+<td>835.332</td>
 <td>-0.035</td>
 <td>tUnc</td>
 <td> </td>
@@ -587,7 +587,7 @@ C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\src\clockGenerator.v<br>
 <td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/sel_xnor_s0</td>
 </tr>
 <tr>
-<td>1670.314</td>
+<td>835.297</td>
 <td>-0.035</td>
 <td>tSu</td>
 <td> </td>
@@ -599,22 +599,22 @@ C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\src\clockGenerator.v<br>
 <table class="summary_table">
 <tr>
 <td class="label">Clock Skew:</td>
-<td>0.170</td>
+<td>0.113</td>
 </tr>
 <tr>
 <td class="label">Setup Relationship:</td>
-<td>0.034</td>
+<td>0.017</td>
 </tr>
 <tr>
 <td class="label">Logic Level:</td>
 <td>7</td>
 </tr>
 <tr>
-<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.180, 100.000%</td></tr>
+<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.237, 100.000%</td></tr>
 <tr>
 <td class="label">Arrival Data Path Delay:</td><td> cell: 2.860, 60.198%; route: 1.659, 34.919%; tC2Q: 0.232, 4.883%</td></tr>
 <tr>
-<td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.180, 100.000%</td></tr>
+<td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.237, 100.000%</td></tr>
 </table>
 <br/>
 <h3>Path&nbsp2</h3>
@@ -622,19 +622,19 @@ C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\src\clockGenerator.v<br>
 <table class="summary_table">
 <tr>
 <td class="label">Slack</td>
-<td>-4.616</td>
+<td>-4.690</td>
 </tr>
 <tr>
 <td class="label">Data Arrival Time</td>
-<td>1674.931</td>
+<td>839.988</td>
 </tr>
 <tr>
 <td class="label">Data Required Time</td>
-<td>1670.315</td>
+<td>835.298</td>
 </tr>
 <tr>
 <td class="label">From</td>
-<td>videoPlanes_inst/Data_tmp_14_s1</td>
+<td>planeMixer/Data_tmp_9_s2</td>
 </tr>
 <tr>
 <td class="label">To</td>
@@ -642,11 +642,11 @@ C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\src\clockGenerator.v<br>
 </tr>
 <tr>
 <td class="label">Launch Clk</td>
-<td>pix_latch[R]</td>
+<td>pixel_latch[R]</td>
 </tr>
 <tr>
 <td class="label">Latch Clk</td>
-<td>clockGenerator_inst/u_clkdiv/CLKOUT.default_gen_clk[R]</td>
+<td>clockGenerator_inst/u_clkdiv/CLKOUT.default_gen_clk[F]</td>
 </tr>
 </table>
 <b>Data Arrival Path:</b>
@@ -660,39 +660,39 @@ C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\src\clockGenerator.v<br>
 <th>NODE</th>
 </tr>
 <tr>
-<td>1670.000</td>
+<td>835.000</td>
 <td>0.000</td>
 <td> </td>
 <td> </td>
 <td> </td>
-<td>pix_latch</td>
+<td>pixel_latch</td>
 </tr>
 <tr>
-<td>1670.000</td>
+<td>835.000</td>
 <td>0.000</td>
 <td>tCL</td>
-<td>RR</td>
-<td>91</td>
+<td>FF</td>
+<td>115</td>
 <td>clockGenerator_inst/O_phase_4_s0/Q</td>
 </tr>
 <tr>
-<td>1670.180</td>
-<td>0.180</td>
+<td>835.237</td>
+<td>0.237</td>
 <td>tNET</td>
-<td>RR</td>
+<td>FF</td>
 <td>1</td>
-<td>videoPlanes_inst/Data_tmp_14_s1/CLK</td>
+<td>planeMixer/Data_tmp_9_s2/CLK</td>
 </tr>
 <tr>
-<td>1670.412</td>
+<td>835.469</td>
 <td>0.232</td>
 <td>tC2Q</td>
-<td>RF</td>
-<td>23</td>
-<td>videoPlanes_inst/Data_tmp_14_s1/Q</td>
+<td>FF</td>
+<td>4</td>
+<td>planeMixer/Data_tmp_9_s2/Q</td>
 </tr>
 <tr>
-<td>1670.649</td>
+<td>835.706</td>
 <td>0.237</td>
 <td>tNET</td>
 <td>FF</td>
@@ -700,7 +700,7 @@ C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\src\clockGenerator.v<br>
 <td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/n114_s8/I1</td>
 </tr>
 <tr>
-<td>1671.204</td>
+<td>836.261</td>
 <td>0.555</td>
 <td>tINS</td>
 <td>FF</td>
@@ -708,7 +708,7 @@ C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\src\clockGenerator.v<br>
 <td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/n114_s8/F</td>
 </tr>
 <tr>
-<td>1671.441</td>
+<td>836.498</td>
 <td>0.237</td>
 <td>tNET</td>
 <td>FF</td>
@@ -716,7 +716,7 @@ C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\src\clockGenerator.v<br>
 <td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/n114_s6/I1</td>
 </tr>
 <tr>
-<td>1671.996</td>
+<td>837.053</td>
 <td>0.555</td>
 <td>tINS</td>
 <td>FF</td>
@@ -724,7 +724,7 @@ C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\src\clockGenerator.v<br>
 <td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/n114_s6/F</td>
 </tr>
 <tr>
-<td>1672.233</td>
+<td>837.290</td>
 <td>0.237</td>
 <td>tNET</td>
 <td>FF</td>
@@ -732,7 +732,7 @@ C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\src\clockGenerator.v<br>
 <td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/n114_s5/I2</td>
 </tr>
 <tr>
-<td>1672.686</td>
+<td>837.743</td>
 <td>0.453</td>
 <td>tINS</td>
 <td>FF</td>
@@ -740,7 +740,7 @@ C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\src\clockGenerator.v<br>
 <td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/n114_s5/F</td>
 </tr>
 <tr>
-<td>1672.923</td>
+<td>837.980</td>
 <td>0.237</td>
 <td>tNET</td>
 <td>FF</td>
@@ -748,7 +748,7 @@ C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\src\clockGenerator.v<br>
 <td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/n114_s2/I1</td>
 </tr>
 <tr>
-<td>1673.478</td>
+<td>838.535</td>
 <td>0.555</td>
 <td>tINS</td>
 <td>FF</td>
@@ -756,7 +756,7 @@ C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\src\clockGenerator.v<br>
 <td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/n114_s2/F</td>
 </tr>
 <tr>
-<td>1673.715</td>
+<td>838.772</td>
 <td>0.237</td>
 <td>tNET</td>
 <td>FF</td>
@@ -764,7 +764,7 @@ C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\src\clockGenerator.v<br>
 <td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/n114_s3/I3</td>
 </tr>
 <tr>
-<td>1674.086</td>
+<td>839.143</td>
 <td>0.371</td>
 <td>tINS</td>
 <td>FF</td>
@@ -772,7 +772,7 @@ C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\src\clockGenerator.v<br>
 <td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/n114_s3/F</td>
 </tr>
 <tr>
-<td>1674.323</td>
+<td>839.380</td>
 <td>0.237</td>
 <td>tNET</td>
 <td>FF</td>
@@ -780,7 +780,7 @@ C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\src\clockGenerator.v<br>
 <td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/n114_s0/I3</td>
 </tr>
 <tr>
-<td>1674.694</td>
+<td>839.751</td>
 <td>0.371</td>
 <td>tINS</td>
 <td>FF</td>
@@ -788,7 +788,7 @@ C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\src\clockGenerator.v<br>
 <td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/n114_s0/F</td>
 </tr>
 <tr>
-<td>1674.931</td>
+<td>839.988</td>
 <td>0.237</td>
 <td>tNET</td>
 <td>FF</td>
@@ -807,7 +807,7 @@ C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\src\clockGenerator.v<br>
 <th>NODE</th>
 </tr>
 <tr>
-<td>1670.034</td>
+<td>835.017</td>
 <td>0.000</td>
 <td> </td>
 <td> </td>
@@ -815,15 +815,15 @@ C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\src\clockGenerator.v<br>
 <td>clockGenerator_inst/u_clkdiv/CLKOUT.default_gen_clk</td>
 </tr>
 <tr>
-<td>1670.204</td>
+<td>835.187</td>
 <td>0.170</td>
 <td>tCL</td>
 <td>RR</td>
-<td>87</td>
+<td>77</td>
 <td>clockGenerator_inst/u_clkdiv/CLKOUT</td>
 </tr>
 <tr>
-<td>1670.384</td>
+<td>835.367</td>
 <td>0.180</td>
 <td>tNET</td>
 <td>RR</td>
@@ -831,7 +831,7 @@ C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\src\clockGenerator.v<br>
 <td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/sel_xnor_s0/CLK</td>
 </tr>
 <tr>
-<td>1670.349</td>
+<td>835.332</td>
 <td>-0.035</td>
 <td>tUnc</td>
 <td> </td>
@@ -839,7 +839,7 @@ C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\src\clockGenerator.v<br>
 <td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/sel_xnor_s0</td>
 </tr>
 <tr>
-<td>1670.314</td>
+<td>835.297</td>
 <td>-0.035</td>
 <td>tSu</td>
 <td> </td>
@@ -851,22 +851,22 @@ C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\src\clockGenerator.v<br>
 <table class="summary_table">
 <tr>
 <td class="label">Clock Skew:</td>
-<td>0.170</td>
+<td>0.113</td>
 </tr>
 <tr>
 <td class="label">Setup Relationship:</td>
-<td>0.034</td>
+<td>0.017</td>
 </tr>
 <tr>
 <td class="label">Logic Level:</td>
 <td>7</td>
 </tr>
 <tr>
-<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.180, 100.000%</td></tr>
+<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.237, 100.000%</td></tr>
 <tr>
 <td class="label">Arrival Data Path Delay:</td><td> cell: 2.860, 60.198%; route: 1.659, 34.919%; tC2Q: 0.232, 4.883%</td></tr>
 <tr>
-<td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.180, 100.000%</td></tr>
+<td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.237, 100.000%</td></tr>
 </table>
 <br/>
 <h3>Path&nbsp3</h3>
@@ -874,19 +874,19 @@ C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\src\clockGenerator.v<br>
 <table class="summary_table">
 <tr>
 <td class="label">Slack</td>
-<td>-4.496</td>
+<td>-4.570</td>
 </tr>
 <tr>
 <td class="label">Data Arrival Time</td>
-<td>1674.811</td>
+<td>839.868</td>
 </tr>
 <tr>
 <td class="label">Data Required Time</td>
-<td>1670.315</td>
+<td>835.298</td>
 </tr>
 <tr>
 <td class="label">From</td>
-<td>videoPlanes_inst/Data_tmp_6_s1</td>
+<td>planeMixer/Data_tmp_0_s2</td>
 </tr>
 <tr>
 <td class="label">To</td>
@@ -894,11 +894,11 @@ C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\src\clockGenerator.v<br>
 </tr>
 <tr>
 <td class="label">Launch Clk</td>
-<td>pix_latch[R]</td>
+<td>pixel_latch[R]</td>
 </tr>
 <tr>
 <td class="label">Latch Clk</td>
-<td>clockGenerator_inst/u_clkdiv/CLKOUT.default_gen_clk[R]</td>
+<td>clockGenerator_inst/u_clkdiv/CLKOUT.default_gen_clk[F]</td>
 </tr>
 </table>
 <b>Data Arrival Path:</b>
@@ -912,39 +912,39 @@ C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\src\clockGenerator.v<br>
 <th>NODE</th>
 </tr>
 <tr>
-<td>1670.000</td>
+<td>835.000</td>
 <td>0.000</td>
 <td> </td>
 <td> </td>
 <td> </td>
-<td>pix_latch</td>
+<td>pixel_latch</td>
 </tr>
 <tr>
-<td>1670.000</td>
+<td>835.000</td>
 <td>0.000</td>
 <td>tCL</td>
-<td>RR</td>
-<td>91</td>
+<td>FF</td>
+<td>115</td>
 <td>clockGenerator_inst/O_phase_4_s0/Q</td>
 </tr>
 <tr>
-<td>1670.180</td>
-<td>0.180</td>
+<td>835.237</td>
+<td>0.237</td>
 <td>tNET</td>
-<td>RR</td>
+<td>FF</td>
 <td>1</td>
-<td>videoPlanes_inst/Data_tmp_6_s1/CLK</td>
+<td>planeMixer/Data_tmp_0_s2/CLK</td>
 </tr>
 <tr>
-<td>1670.412</td>
+<td>835.469</td>
 <td>0.232</td>
 <td>tC2Q</td>
-<td>RF</td>
-<td>30</td>
-<td>videoPlanes_inst/Data_tmp_6_s1/Q</td>
+<td>FF</td>
+<td>32</td>
+<td>planeMixer/Data_tmp_0_s2/Q</td>
 </tr>
 <tr>
-<td>1670.649</td>
+<td>835.706</td>
 <td>0.237</td>
 <td>tNET</td>
 <td>FF</td>
@@ -952,7 +952,7 @@ C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\src\clockGenerator.v<br>
 <td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/n114_s9/I1</td>
 </tr>
 <tr>
-<td>1671.204</td>
+<td>836.261</td>
 <td>0.555</td>
 <td>tINS</td>
 <td>FF</td>
@@ -960,7 +960,7 @@ C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\src\clockGenerator.v<br>
 <td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/n114_s9/F</td>
 </tr>
 <tr>
-<td>1671.441</td>
+<td>836.498</td>
 <td>0.237</td>
 <td>tNET</td>
 <td>FF</td>
@@ -968,7 +968,7 @@ C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\src\clockGenerator.v<br>
 <td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/n114_s8/I1</td>
 </tr>
 <tr>
-<td>1671.996</td>
+<td>837.053</td>
 <td>0.555</td>
 <td>tINS</td>
 <td>FF</td>
@@ -976,7 +976,7 @@ C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\src\clockGenerator.v<br>
 <td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/n114_s8/F</td>
 </tr>
 <tr>
-<td>1672.233</td>
+<td>837.290</td>
 <td>0.237</td>
 <td>tNET</td>
 <td>FF</td>
@@ -984,7 +984,7 @@ C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\src\clockGenerator.v<br>
 <td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/n114_s10/I3</td>
 </tr>
 <tr>
-<td>1672.604</td>
+<td>837.661</td>
 <td>0.371</td>
 <td>tINS</td>
 <td>FF</td>
@@ -992,7 +992,7 @@ C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\src\clockGenerator.v<br>
 <td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/n114_s10/F</td>
 </tr>
 <tr>
-<td>1672.841</td>
+<td>837.898</td>
 <td>0.237</td>
 <td>tNET</td>
 <td>FF</td>
@@ -1000,7 +1000,7 @@ C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\src\clockGenerator.v<br>
 <td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/n114_s2/I0</td>
 </tr>
 <tr>
-<td>1673.358</td>
+<td>838.415</td>
 <td>0.517</td>
 <td>tINS</td>
 <td>FF</td>
@@ -1008,7 +1008,7 @@ C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\src\clockGenerator.v<br>
 <td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/n114_s2/F</td>
 </tr>
 <tr>
-<td>1673.595</td>
+<td>838.652</td>
 <td>0.237</td>
 <td>tNET</td>
 <td>FF</td>
@@ -1016,7 +1016,7 @@ C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\src\clockGenerator.v<br>
 <td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/n114_s3/I3</td>
 </tr>
 <tr>
-<td>1673.966</td>
+<td>839.023</td>
 <td>0.371</td>
 <td>tINS</td>
 <td>FF</td>
@@ -1024,7 +1024,7 @@ C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\src\clockGenerator.v<br>
 <td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/n114_s3/F</td>
 </tr>
 <tr>
-<td>1674.203</td>
+<td>839.260</td>
 <td>0.237</td>
 <td>tNET</td>
 <td>FF</td>
@@ -1032,7 +1032,7 @@ C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\src\clockGenerator.v<br>
 <td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/n114_s0/I3</td>
 </tr>
 <tr>
-<td>1674.574</td>
+<td>839.631</td>
 <td>0.371</td>
 <td>tINS</td>
 <td>FF</td>
@@ -1040,7 +1040,7 @@ C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\src\clockGenerator.v<br>
 <td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/n114_s0/F</td>
 </tr>
 <tr>
-<td>1674.811</td>
+<td>839.868</td>
 <td>0.237</td>
 <td>tNET</td>
 <td>FF</td>
@@ -1059,7 +1059,7 @@ C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\src\clockGenerator.v<br>
 <th>NODE</th>
 </tr>
 <tr>
-<td>1670.034</td>
+<td>835.017</td>
 <td>0.000</td>
 <td> </td>
 <td> </td>
@@ -1067,15 +1067,15 @@ C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\src\clockGenerator.v<br>
 <td>clockGenerator_inst/u_clkdiv/CLKOUT.default_gen_clk</td>
 </tr>
 <tr>
-<td>1670.204</td>
+<td>835.187</td>
 <td>0.170</td>
 <td>tCL</td>
 <td>RR</td>
-<td>87</td>
+<td>77</td>
 <td>clockGenerator_inst/u_clkdiv/CLKOUT</td>
 </tr>
 <tr>
-<td>1670.384</td>
+<td>835.367</td>
 <td>0.180</td>
 <td>tNET</td>
 <td>RR</td>
@@ -1083,7 +1083,7 @@ C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\src\clockGenerator.v<br>
 <td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/sel_xnor_s0/CLK</td>
 </tr>
 <tr>
-<td>1670.349</td>
+<td>835.332</td>
 <td>-0.035</td>
 <td>tUnc</td>
 <td> </td>
@@ -1091,7 +1091,7 @@ C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\src\clockGenerator.v<br>
 <td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/sel_xnor_s0</td>
 </tr>
 <tr>
-<td>1670.314</td>
+<td>835.297</td>
 <td>-0.035</td>
 <td>tSu</td>
 <td> </td>
@@ -1103,22 +1103,22 @@ C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\src\clockGenerator.v<br>
 <table class="summary_table">
 <tr>
 <td class="label">Clock Skew:</td>
-<td>0.170</td>
+<td>0.113</td>
 </tr>
 <tr>
 <td class="label">Setup Relationship:</td>
-<td>0.034</td>
+<td>0.017</td>
 </tr>
 <tr>
 <td class="label">Logic Level:</td>
 <td>7</td>
 </tr>
 <tr>
-<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.180, 100.000%</td></tr>
+<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.237, 100.000%</td></tr>
 <tr>
 <td class="label">Arrival Data Path Delay:</td><td> cell: 2.740, 59.166%; route: 1.659, 35.824%; tC2Q: 0.232, 5.010%</td></tr>
 <tr>
-<td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.180, 100.000%</td></tr>
+<td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.237, 100.000%</td></tr>
 </table>
 <br/>
 <h3>Path&nbsp4</h3>
@@ -1126,31 +1126,31 @@ C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\src\clockGenerator.v<br>
 <table class="summary_table">
 <tr>
 <td class="label">Slack</td>
-<td>-1.366</td>
+<td>-0.408</td>
 </tr>
 <tr>
 <td class="label">Data Arrival Time</td>
-<td>2331.476</td>
+<td>835.706</td>
 </tr>
 <tr>
 <td class="label">Data Required Time</td>
-<td>2330.110</td>
+<td>835.298</td>
 </tr>
 <tr>
 <td class="label">From</td>
-<td>cnt_vs_8_s0</td>
+<td>planeMixer/Data_tmp_23_s2</td>
 </tr>
 <tr>
 <td class="label">To</td>
-<td>videoPlanes_inst/Data_tmp_6_s1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/din_d_7_s0</td>
 </tr>
 <tr>
 <td class="label">Launch Clk</td>
-<td>clockGenerator_inst/u_clkdiv/CLKOUT.default_gen_clk[R]</td>
+<td>pixel_latch[R]</td>
 </tr>
 <tr>
 <td class="label">Latch Clk</td>
-<td>pix_latch[R]</td>
+<td>clockGenerator_inst/u_clkdiv/CLKOUT.default_gen_clk[F]</td>
 </tr>
 </table>
 <b>Data Arrival Path:</b>
@@ -1164,60 +1164,44 @@ C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\src\clockGenerator.v<br>
 <th>NODE</th>
 </tr>
 <tr>
-<td>2329.966</td>
+<td>835.000</td>
 <td>0.000</td>
 <td> </td>
 <td> </td>
 <td> </td>
-<td>clockGenerator_inst/u_clkdiv/CLKOUT.default_gen_clk</td>
+<td>pixel_latch</td>
 </tr>
 <tr>
-<td>2330.137</td>
-<td>0.170</td>
+<td>835.000</td>
+<td>0.000</td>
 <td>tCL</td>
-<td>RR</td>
-<td>87</td>
-<td>clockGenerator_inst/u_clkdiv/CLKOUT</td>
+<td>FF</td>
+<td>115</td>
+<td>clockGenerator_inst/O_phase_4_s0/Q</td>
 </tr>
 <tr>
-<td>2330.317</td>
-<td>0.180</td>
+<td>835.237</td>
+<td>0.237</td>
 <td>tNET</td>
-<td>RR</td>
+<td>FF</td>
 <td>1</td>
-<td>cnt_vs_8_s0/CLK</td>
+<td>planeMixer/Data_tmp_23_s2/CLK</td>
 </tr>
 <tr>
-<td>2330.549</td>
+<td>835.469</td>
 <td>0.232</td>
 <td>tC2Q</td>
-<td>RF</td>
-<td>7</td>
-<td>cnt_vs_8_s0/Q</td>
+<td>FF</td>
+<td>2</td>
+<td>planeMixer/Data_tmp_23_s2/Q</td>
 </tr>
 <tr>
-<td>2330.786</td>
+<td>835.706</td>
 <td>0.237</td>
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>videoPlanes_inst/Data_sel_6_s0/I2</td>
-</tr>
-<tr>
-<td>2331.239</td>
-<td>0.453</td>
-<td>tINS</td>
-<td>FF</td>
-<td>1</td>
-<td>videoPlanes_inst/Data_sel_6_s0/F</td>
-</tr>
-<tr>
-<td>2331.476</td>
-<td>0.237</td>
-<td>tNET</td>
-<td>FF</td>
-<td>1</td>
-<td>videoPlanes_inst/Data_tmp_6_s1/D</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/din_d_7_s0/D</td>
 </tr>
 </table>
 <b>Data Required Path:</b>
@@ -1231,66 +1215,66 @@ C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\src\clockGenerator.v<br>
 <th>NODE</th>
 </tr>
 <tr>
-<td>2330.000</td>
+<td>835.017</td>
 <td>0.000</td>
 <td> </td>
 <td> </td>
 <td> </td>
-<td>pix_latch</td>
+<td>clockGenerator_inst/u_clkdiv/CLKOUT.default_gen_clk</td>
 </tr>
 <tr>
-<td>2330.000</td>
-<td>0.000</td>
+<td>835.187</td>
+<td>0.170</td>
 <td>tCL</td>
 <td>RR</td>
-<td>91</td>
-<td>clockGenerator_inst/O_phase_4_s0/Q</td>
+<td>77</td>
+<td>clockGenerator_inst/u_clkdiv/CLKOUT</td>
 </tr>
 <tr>
-<td>2330.180</td>
+<td>835.367</td>
 <td>0.180</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>videoPlanes_inst/Data_tmp_6_s1/CLK</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/din_d_7_s0/CLK</td>
 </tr>
 <tr>
-<td>2330.145</td>
+<td>835.332</td>
 <td>-0.035</td>
 <td>tUnc</td>
 <td> </td>
 <td> </td>
-<td>videoPlanes_inst/Data_tmp_6_s1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/din_d_7_s0</td>
 </tr>
 <tr>
-<td>2330.110</td>
+<td>835.297</td>
 <td>-0.035</td>
 <td>tSu</td>
 <td> </td>
 <td>1</td>
-<td>videoPlanes_inst/Data_tmp_6_s1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/din_d_7_s0</td>
 </tr>
 </table>
 <b>Path Statistics:</b>
 <table class="summary_table">
 <tr>
 <td class="label">Clock Skew:</td>
-<td>-0.170</td>
+<td>0.113</td>
 </tr>
 <tr>
 <td class="label">Setup Relationship:</td>
-<td>0.034</td>
+<td>0.017</td>
 </tr>
 <tr>
 <td class="label">Logic Level:</td>
-<td>2</td>
+<td>1</td>
 </tr>
 <tr>
-<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.180, 100.000%</td></tr>
+<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.237, 100.000%</td></tr>
 <tr>
-<td class="label">Arrival Data Path Delay:</td><td> cell: 0.453, 39.085%; route: 0.474, 40.898%; tC2Q: 0.232, 20.017%</td></tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.237, 50.533%; tC2Q: 0.232, 49.467%</td></tr>
 <tr>
-<td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.180, 100.000%</td></tr>
+<td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.237, 100.000%</td></tr>
 </table>
 <br/>
 <h3>Path&nbsp5</h3>
@@ -1298,31 +1282,31 @@ C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\src\clockGenerator.v<br>
 <table class="summary_table">
 <tr>
 <td class="label">Slack</td>
-<td>-1.366</td>
+<td>-0.408</td>
 </tr>
 <tr>
 <td class="label">Data Arrival Time</td>
-<td>2331.476</td>
+<td>835.706</td>
 </tr>
 <tr>
 <td class="label">Data Required Time</td>
-<td>2330.110</td>
+<td>835.298</td>
 </tr>
 <tr>
 <td class="label">From</td>
-<td>cnt_vs_8_s0</td>
+<td>planeMixer/Data_tmp_16_s2</td>
 </tr>
 <tr>
 <td class="label">To</td>
-<td>videoPlanes_inst/Data_tmp_7_s1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/din_d_0_s0</td>
 </tr>
 <tr>
 <td class="label">Launch Clk</td>
-<td>clockGenerator_inst/u_clkdiv/CLKOUT.default_gen_clk[R]</td>
+<td>pixel_latch[R]</td>
 </tr>
 <tr>
 <td class="label">Latch Clk</td>
-<td>pix_latch[R]</td>
+<td>clockGenerator_inst/u_clkdiv/CLKOUT.default_gen_clk[F]</td>
 </tr>
 </table>
 <b>Data Arrival Path:</b>
@@ -1336,60 +1320,44 @@ C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\src\clockGenerator.v<br>
 <th>NODE</th>
 </tr>
 <tr>
-<td>2329.966</td>
+<td>835.000</td>
 <td>0.000</td>
 <td> </td>
 <td> </td>
 <td> </td>
-<td>clockGenerator_inst/u_clkdiv/CLKOUT.default_gen_clk</td>
+<td>pixel_latch</td>
 </tr>
 <tr>
-<td>2330.137</td>
-<td>0.170</td>
+<td>835.000</td>
+<td>0.000</td>
 <td>tCL</td>
-<td>RR</td>
-<td>87</td>
-<td>clockGenerator_inst/u_clkdiv/CLKOUT</td>
+<td>FF</td>
+<td>115</td>
+<td>clockGenerator_inst/O_phase_4_s0/Q</td>
 </tr>
 <tr>
-<td>2330.317</td>
-<td>0.180</td>
+<td>835.237</td>
+<td>0.237</td>
 <td>tNET</td>
-<td>RR</td>
+<td>FF</td>
 <td>1</td>
-<td>cnt_vs_8_s0/CLK</td>
+<td>planeMixer/Data_tmp_16_s2/CLK</td>
 </tr>
 <tr>
-<td>2330.549</td>
+<td>835.469</td>
 <td>0.232</td>
 <td>tC2Q</td>
-<td>RF</td>
-<td>7</td>
-<td>cnt_vs_8_s0/Q</td>
+<td>FF</td>
+<td>4</td>
+<td>planeMixer/Data_tmp_16_s2/Q</td>
 </tr>
 <tr>
-<td>2330.786</td>
+<td>835.706</td>
 <td>0.237</td>
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>videoPlanes_inst/Data_sel_7_s0/I2</td>
-</tr>
-<tr>
-<td>2331.239</td>
-<td>0.453</td>
-<td>tINS</td>
-<td>FF</td>
-<td>1</td>
-<td>videoPlanes_inst/Data_sel_7_s0/F</td>
-</tr>
-<tr>
-<td>2331.476</td>
-<td>0.237</td>
-<td>tNET</td>
-<td>FF</td>
-<td>1</td>
-<td>videoPlanes_inst/Data_tmp_7_s1/D</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/din_d_0_s0/D</td>
 </tr>
 </table>
 <b>Data Required Path:</b>
@@ -1403,66 +1371,66 @@ C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\src\clockGenerator.v<br>
 <th>NODE</th>
 </tr>
 <tr>
-<td>2330.000</td>
+<td>835.017</td>
 <td>0.000</td>
 <td> </td>
 <td> </td>
 <td> </td>
-<td>pix_latch</td>
+<td>clockGenerator_inst/u_clkdiv/CLKOUT.default_gen_clk</td>
 </tr>
 <tr>
-<td>2330.000</td>
-<td>0.000</td>
+<td>835.187</td>
+<td>0.170</td>
 <td>tCL</td>
 <td>RR</td>
-<td>91</td>
-<td>clockGenerator_inst/O_phase_4_s0/Q</td>
+<td>77</td>
+<td>clockGenerator_inst/u_clkdiv/CLKOUT</td>
 </tr>
 <tr>
-<td>2330.180</td>
+<td>835.367</td>
 <td>0.180</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>videoPlanes_inst/Data_tmp_7_s1/CLK</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/din_d_0_s0/CLK</td>
 </tr>
 <tr>
-<td>2330.145</td>
+<td>835.332</td>
 <td>-0.035</td>
 <td>tUnc</td>
 <td> </td>
 <td> </td>
-<td>videoPlanes_inst/Data_tmp_7_s1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/din_d_0_s0</td>
 </tr>
 <tr>
-<td>2330.110</td>
+<td>835.297</td>
 <td>-0.035</td>
 <td>tSu</td>
 <td> </td>
 <td>1</td>
-<td>videoPlanes_inst/Data_tmp_7_s1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/din_d_0_s0</td>
 </tr>
 </table>
 <b>Path Statistics:</b>
 <table class="summary_table">
 <tr>
 <td class="label">Clock Skew:</td>
-<td>-0.170</td>
+<td>0.113</td>
 </tr>
 <tr>
 <td class="label">Setup Relationship:</td>
-<td>0.034</td>
+<td>0.017</td>
 </tr>
 <tr>
 <td class="label">Logic Level:</td>
-<td>2</td>
+<td>1</td>
 </tr>
 <tr>
-<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.180, 100.000%</td></tr>
+<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.237, 100.000%</td></tr>
 <tr>
-<td class="label">Arrival Data Path Delay:</td><td> cell: 0.453, 39.085%; route: 0.474, 40.898%; tC2Q: 0.232, 20.017%</td></tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.237, 50.533%; tC2Q: 0.232, 49.467%</td></tr>
 <tr>
-<td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.180, 100.000%</td></tr>
+<td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.237, 100.000%</td></tr>
 </table>
 <br/>
 </div><!-- content -->

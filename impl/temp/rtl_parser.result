@@ -9,17 +9,17 @@
   "SubInsts" : [
    {
     "InstFile" : "C:/Users/jordi/OneDrive/Documents/Projects/FPGA/vdp20k/src/top.v",
-    "InstLine" : 54,
+    "InstLine" : 56,
     "InstName" : "clockGenerator_inst",
-    "ModuleFile" : "C:/Users/jordi/OneDrive/Documents/Projects/FPGA/vdp20k/src/clockGenerator.v",
+    "ModuleFile" : "C:/Users/jordi/OneDrive/Documents/Projects/FPGA/vdp20k/src/clock/clockGenerator.v",
     "ModuleLine" : 1,
     "ModuleName" : "clockGenerator",
     "SubInsts" : [
      {
-      "InstFile" : "C:/Users/jordi/OneDrive/Documents/Projects/FPGA/vdp20k/src/clockGenerator.v",
+      "InstFile" : "C:/Users/jordi/OneDrive/Documents/Projects/FPGA/vdp20k/src/clock/clockGenerator.v",
       "InstLine" : 19,
       "InstName" : "u_tmds_rpll",
-      "ModuleFile" : "C:/Users/jordi/OneDrive/Documents/Projects/FPGA/vdp20k/src/gowin_rpll/TMDS_rPLL.v",
+      "ModuleFile" : "C:/Users/jordi/OneDrive/Documents/Projects/FPGA/vdp20k/src/clock/gowin_rpll/TMDS_rPLL.v",
       "ModuleLine" : 9,
       "ModuleName" : "TMDS_rPLL"
      }
@@ -27,23 +27,23 @@
    },
    {
     "InstFile" : "C:/Users/jordi/OneDrive/Documents/Projects/FPGA/vdp20k/src/top.v",
-    "InstLine" : 89,
-    "InstName" : "foregroundPlane_inst",
+    "InstLine" : 80,
+    "InstName" : "foregroundPlane",
     "ModuleFile" : "C:/Users/jordi/OneDrive/Documents/Projects/FPGA/vdp20k/src/planes/foreground/foregroundPlane.v",
     "ModuleLine" : 2,
-    "ModuleName" : "foregroundPlane"
+    "ModuleName" : "ForegroundPlane"
    },
    {
     "InstFile" : "C:/Users/jordi/OneDrive/Documents/Projects/FPGA/vdp20k/src/top.v",
-    "InstLine" : 99,
-    "InstName" : "videoPlanes_inst",
-    "ModuleFile" : "C:/Users/jordi/OneDrive/Documents/Projects/FPGA/vdp20k/src/videoPlanes.v",
-    "ModuleLine" : 17,
-    "ModuleName" : "videoPlanes"
+    "InstLine" : 94,
+    "InstName" : "planeMixer",
+    "ModuleFile" : "C:/Users/jordi/OneDrive/Documents/Projects/FPGA/vdp20k/src/PlaneMixer.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "PlaneMixer"
    },
    {
     "InstFile" : "C:/Users/jordi/OneDrive/Documents/Projects/FPGA/vdp20k/src/top.v",
-    "InstLine" : 148,
+    "InstLine" : 147,
     "InstName" : "DVI_TX_Top_inst",
     "ModuleFile" : "C:/Users/jordi/OneDrive/Documents/Projects/FPGA/vdp20k/src/dvi_tx/dvi_tx.v",
     "ModuleLine" : 1035,

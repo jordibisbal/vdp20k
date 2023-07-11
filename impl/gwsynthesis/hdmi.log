@@ -1,21 +1,23 @@
 GowinSynthesis start
 Running parser ...
 Analyzing Verilog file 'C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\src\dvi_tx\dvi_tx.v'
-Analyzing Verilog file 'C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\src\gowin_rpll\TMDS_rPLL.v'
 Analyzing Verilog file 'C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\src\planes\foreground\foregroundPlane.v'
 Analyzing Verilog file 'C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\src\top.v'
-Undeclared symbol 'serial_clk', assumed default net type 'wire'("C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\src\top.v":57)
-Undeclared symbol 'pix_clk', assumed default net type 'wire'("C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\src\top.v":58)
-Undeclared symbol 'reset_n', assumed default net type 'wire'("C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\src\top.v":59)
-Analyzing Verilog file 'C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\src\videoPlanes.v'
-Analyzing Verilog file 'C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\src\clockGenerator.v'
-Undeclared symbol 'O_pll_lock', assumed default net type 'wire'("C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\src\clockGenerator.v":23)
+Undeclared symbol 'pix_clk', assumed default net type 'wire'("C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\src\top.v":60)
+Undeclared symbol 'reset_n', assumed default net type 'wire'("C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\src\top.v":61)
+Undeclared symbol 'a', assumed default net type 'wire'("C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\src\top.v":62)
+Undeclared symbol 'b', assumed default net type 'wire'("C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\src\top.v":63)
+Undeclared symbol 'c', assumed default net type 'wire'("C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\src\top.v":64)
+Undeclared symbol 'd', assumed default net type 'wire'("C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\src\top.v":65)
+Analyzing Verilog file 'C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\src\clock\clockGenerator.v'
+Undeclared symbol 'O_pll_lock', assumed default net type 'wire'("C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\src\clock\clockGenerator.v":23)
+Analyzing Verilog file 'C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\src\clock\gowin_rpll\TMDS_rPLL.v'
+Analyzing Verilog file 'C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\src\PlaneMixer.v'
 Compiling module 'top'("C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\src\top.v":24)
-Compiling module 'clockGenerator'("C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\src\clockGenerator.v":1)
-Compiling module 'TMDS_rPLL'("C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\src\gowin_rpll\TMDS_rPLL.v":9)
-WARN  (EX2452) : Invert of if-condition matches sensitivity list edge, this is unconventional("C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\src\clockGenerator.v":42)
-Compiling module 'foregroundPlane'("C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\src\planes\foreground\foregroundPlane.v":2)
-Compiling module 'videoPlanes'("C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\src\videoPlanes.v":17)
+Compiling module 'clockGenerator'("C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\src\clock\clockGenerator.v":1)
+Compiling module 'TMDS_rPLL'("C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\src\clock\gowin_rpll\TMDS_rPLL.v":9)
+Compiling module 'ForegroundPlane'("C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\src\planes\foreground\foregroundPlane.v":2)
+Compiling module 'PlaneMixer'("C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\src\PlaneMixer.v":1)
 Compiling module 'DVI_TX_Top'("C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\src\dvi_tx\dvi_tx.v":1035)
 Compiling module '**'("C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\src\dvi_tx\dvi_tx.v":0)
 Compiling module '**'("C:\Users\jordi\OneDrive\Documents\Projects\FPGA\vdp20k\src\dvi_tx\dvi_tx.v":0)

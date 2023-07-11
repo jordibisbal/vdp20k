@@ -1,22 +1,23 @@
 
-module foregroundPlane(
-    input              I_pxl_clk, //pixel clock
-    input              I_rst_n,   //low active     
-    output reg [23:0]  O_pixel    // Module ouput
+module ForegroundPlane(
+    input              pixel_latch, // pixel latch
+    input              N_reset,     
+
+    input [11:0]       pixel_x,
+    input [11:0]       pixel_y,
+
+    output reg [23:0]  pixel        // pixel ouput
+    
 );  
 
     // VRAM
 
-//    foregroundVRam_00 foregroundVRam_00_inst (
-//        .dout(foregroundVRam_dout_0)     
-//    );
-
     // Logic
 
-    always @(posedge I_pxl_clk or negedge I_rst_n) begin
-        if(!I_rst_n)
-            O_pixel <= 24'd0;          
+    always @(posedge pixel_latch or negedge N_reset) begin
+        if(!N_reset)
+            pixel <= 0;          
         else
-            O_pixel <= 24'h3F5F7F;
+            pixel <= ((pixel_y & 8'hFF) << 8) + ((pixel_x & 8'hFF) << 16);
     end
 endmodule

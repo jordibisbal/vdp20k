@@ -49,7 +49,9 @@ reg  [9:0]  cnt_vs;
 //===========================================================================
 // clock generation
 
-wire pix_latch;
+wire pixel_latch;
+wire serial_clk;
+
 
 clockGenerator clockGenerator_inst (
     .I_clock(I_clk),
@@ -57,53 +59,47 @@ clockGenerator clockGenerator_inst (
     .O_serial_clk(serial_clk),    
     .O_pixel_clk(pix_clk),
     .O_N_reset(reset_n),
-    .O_phase_0(),
-    .O_phase_1(),
-    .O_phase_2(),
-    .O_phase_3(),
-    .O_phase_4(pix_latch)
+    .O_phase_0(a),
+    .O_phase_1(b),
+    .O_phase_2(c),
+    .O_phase_3(d),
+    .O_phase_4(pixel_latch)
 );
 
-//===================================================
-//LED test
+//===========================================================================
+// pixel wires
 
-always @(posedge I_clk or negedge I_rst_n) //I_clk
-begin
-    if(!I_rst_n)
-        run_cnt <= 32'd0;
-    else if(run_cnt >= 32'd27_000_000)
-        run_cnt <= 32'd0;
-    else
-        run_cnt <= run_cnt + 1'b1;
-end
-
-assign  running = (run_cnt < 32'd14_000_000) ? 1'b1 : 1'b0;
-
+wire [11:0] pixel_x;
+wire [11:0] pixel_y;
 
 
 //===========================================================================
 // foregroundPlane
 
-wire [23:0] W_foregroundPixel;
 
-foregroundPlane foregroundPlane_inst(
-    .I_pxl_clk   (pix_latch      ),//pixel clock
-    .I_rst_n     (reset_n        ),//low active
-    .O_pixel     (W_foregroundPixel)
+ForegroundPlane foregroundPlane
+(
+    .pixel_latch (pixel_latch),     // pixel latch
+    .N_reset     (reset_n),         
+    .pixel_x     (pixel_x),
+    .pixel_y     (pixel_y),
+
+    .pixel       ()
 );
 
 
 //===========================================================================
 // videoPlanes
 
-videoPlanes videoPlanes_inst
+PlaneMixer planeMixer
 (
-    .I_pxl_clk   (pix_latch          ),//pixel clock
-    .I_rst_n     (reset_n            ),//low active 
+    .I_pxl_clk   (pixel_latch),                // pixel clock
+    .I_pxl_latch (pixel_latch),                // pixel latch  
+
+    .foreground_pixel(foregroundPlane.pixel), // pixels from foreground plane
+
+    .I_N_reset   (reset_n),           
     .I_mode      ({1'b0,cnt_vs[9:8]} ),//data select
-    .I_single_r  (8'h07F             ),
-    .I_single_g  (8'h0FF             ),
-    .I_single_b  (8'h07F             ),                  //800x600    //1024x768   //1280x720    
     .I_h_total   (12'd1650           ),//hor total time  // 12'd1056  // 12'd1344  // 12'd1650  
     .I_h_sync    (12'd40             ),//hor sync time   // 12'd128   // 12'd136   // 12'd40    
     .I_h_bporch  (12'd220            ),//hor back porch  // 12'd88    // 12'd160   // 12'd220   
@@ -121,7 +117,10 @@ videoPlanes videoPlanes_inst
     .O_data_g    (tp0_data_g         ),
     .O_data_b    (tp0_data_b         ),
 
-    .I_pxl_foreground(foregroundPlane.O_pixel)
+    .O_pixel_x (pixel_x),
+    .O_pixel_y (pixel_y)
+
+    
 );
 
 
